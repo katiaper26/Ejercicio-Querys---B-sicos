@@ -1,0 +1,68 @@
+### Tabla `country`
+
+1. **Seleccionar todos los registros de la tabla country:**
+   
+   SELECT * FROM country;
+   
+
+2. **Seleccionar todos los registros de la tabla country donde el country_id es 128:**
+   
+   SELECT * FROM country WHERE country_id = 128;
+   
+
+3. **Seleccionar el country_name de todos los registros de la tabla country:**
+   
+   SELECT country_name FROM country;
+   
+
+4. **Seleccionar todos los registros de la tabla country ordenados por country_name:**
+   
+   SELECT * FROM country ORDER BY country_name;
+   
+
+5. **Seleccionar el country_iso_code y country_name de todos los registros de la tabla country donde el country_id es mayor que 130:**
+   
+   SELECT country_iso_code, country_name FROM country WHERE country_id > 130;
+   
+
+### Tabla `keyword`
+
+6. **Seleccionar todos los registros de la tabla keyword:**
+   
+   SELECT * FROM keyword;
+   
+
+7. **Seleccionar todos los registros de la tabla keyword donde el keyword_id es 30:**
+   
+   SELECT * FROM keyword WHERE keyword_id = 30;
+   
+
+8. **Seleccionar el keyword_name de todos los registros de la tabla keyword:**
+   
+   SELECT keyword_name FROM keyword;
+   
+
+9. **Seleccionar todos los registros de la tabla keyword ordenados por keyword_name:**
+   
+   SELECT * FROM keyword ORDER BY keyword_name;
+   
+
+10. **Seleccionar todos los registros de la tabla keyword donde el keyword_id es mayor que 30 y menor que 100:**
+    
+    SELECT * FROM keyword WHERE keyword_id > 30 AND keyword_id < 100;
+    
+
+11. **Seleccionar todos los registros de la tabla keyword donde el keyword_name contiene la palabra 'world' o 'paris':**
+    
+    SELECT * FROM keyword WHERE keyword_name LIKE '%world%' OR keyword_name LIKE '%paris%';
+    
+
+12. **Seleccionar todos los registros de la tabla keyword donde el keyword_id no es 30 y el keyword_name no contiene la palabra 'germany':**
+    
+    SELECT * FROM keyword WHERE keyword_id <> 30 AND keyword_name NOT LIKE '%germany%';
+    
+
+13. **Seleccionar todos los registros de la tabla keyword donde el keyword_id es mayor que 100 y el keyword_name contiene la palabra 'spain':**
+    
+    SELECT * FROM keyword WHERE keyword_id > 100 AND keyword_name LIKE '%spain%';
+  
